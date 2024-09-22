@@ -86,6 +86,12 @@ public class ComplaintServiceImpl implements ComplaintService {
         return complaintRepository.countByStatus(status);
     }
 
+
+    @Override
+    public List<Complaint> getComplaintsByAgent(Long agentId) {
+        return complaintRepository.findByAssignedAgentId(agentId);
+    }
+
     
 
 }

@@ -39,6 +39,7 @@ public class Complaint {
 
     @JsonIgnoreProperties({"complaints"})
     @ManyToOne
+    //@JoinColumn(name = "agent_id")
     private Agent agent;
 
 }
